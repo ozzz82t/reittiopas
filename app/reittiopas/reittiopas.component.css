@@ -1,0 +1,90 @@
+.container {
+    display: grid;
+    grid-template-columns: 15% 200px 340px 340px;
+    grid-template-rows: 75px 600px;
+}
+
+.sidebar {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: rgb(44, 58, 85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: rgb(51, 79, 131);
+    color: rgb(152,181,240);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+
+}
+
+.map {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.logo{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: rgb(44, 58, 85);
+    color: white;
+}
+
+.results {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.ohje {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: white;
+}
+
+.btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 50px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+

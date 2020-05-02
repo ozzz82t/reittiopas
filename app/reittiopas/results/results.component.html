@@ -1,0 +1,12 @@
+<div class="container" *ngIf="!hidden">
+    <div class="result">
+        {{time}} min
+    </div>
+    <div class="stops"  *ngFor="let route of routes">
+        <div class="circle">{{route.stop}}</div>
+        <div *ngFor="let line of route.lines">
+            <div [ngClass]="['stop', line]"></div>
+        </div>
+        
+    </div>
+</div>
