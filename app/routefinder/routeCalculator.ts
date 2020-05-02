@@ -59,7 +59,8 @@ export class RouteCalculator {
 
         const allRoutes: BusStop[][] = [];
      
-        const listRoutes = (currentStop: BusStop, stopsVisited: BusStop[]): BusStop[][] => {            stopsVisited.push(currentStop);
+        const listRoutes = (currentStop: BusStop, stopsVisited: BusStop[]): BusStop[][] => {
+            stopsVisited.push(currentStop);
             let nextStops: BusStop[] = this.getNextStops(currentStop);
             nextStops = filter(stopsVisited, nextStops);
 
